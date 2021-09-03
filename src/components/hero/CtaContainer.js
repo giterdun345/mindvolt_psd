@@ -1,6 +1,6 @@
 import React from 'react'
 import { StaticImage } from "gatsby-plugin-image"
-
+import { Link } from 'gatsby'
 import * as heroStyle from './hero.module.scss'
 
 const CtaContainer = () => {
@@ -15,8 +15,10 @@ const CtaContainer = () => {
           className={heroStyle.creditCard}
         />
       <button className={heroStyle.ctaButton}>
-        <span>See details</span>
-        <div className={heroStyle.arrowDown} />
+        <Link to='#middle_panel'>
+          <span>See details</span>
+          <div className={heroStyle.arrowDown} />
+        </Link>
       </button>
     </div>
    );
