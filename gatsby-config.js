@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://mindvoltpsdmaster.gatsbyjs.io/",
     title: "mindvolt_psd",
   },
   plugins: [
@@ -9,6 +9,7 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -17,5 +18,17 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: "gatsby-plugin-manifest",
+      options:{
+        name: "Mindvolt Project",
+        short_name: "mindvolt_psd",
+        start_url: "/",
+        icon: "./src/images/bank-icon.png",
+        display: "standalone",
+        theme_color: "#000000",
+        background_color: "#ffffff"
+      }
+    }
   ],
 };

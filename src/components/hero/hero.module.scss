@@ -1,0 +1,129 @@
+$goldfb: #f9a403;
+$bluefb: #1a1f71;
+// Source Sans Pro 
+// light 300 
+// regular 400 
+// semi-bold 600 
+// bold 700 
+
+@mixin flow-no-wrap {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.heroText{
+  position: absolute;
+  top: 1.5%;
+  left: 2%;
+  font-family: "Source Sans Pro", sans-serif;
+  color: $bluefb;
+  // background-color: yellow;
+  width: 58%;
+
+  h1{
+    font-size: 4.28vw;
+    font-weight: 100;
+    letter-spacing: -3px;
+   
+  }
+
+  h2{
+    font-size: 2.4vw;
+    font-weight: 100;
+    
+  }
+
+}
+
+.ctaContainer{
+  @include flow-no-wrap;
+  // background-color: yellow;
+  margin-top: 3.5vw;
+  margin-left: -0.5vw;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 41vw;
+  height: 15vw;
+
+  .creditCard{
+    width: 25vw;
+    height: 15vw;
+    visibility: visible;
+  }
+
+  .ctaButton{
+    @include flow-no-wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 5vw;
+    width: 15vw;
+    color: $bluefb;
+    background-color: $goldfb;
+    font-size: 2vw;
+    font-weight:bold;
+    letter-spacing: -1px;
+    
+    .arrowDown {
+      width: 0; 
+      height: 0; 
+      border-left: 0.75vw solid transparent;
+      border-right: 0.75vw solid transparent;
+      border-top: 0.75vw solid $bluefb;
+      margin-top: 0.25em;
+    }
+
+  }
+}
+
+.rectangleSVG{
+  position: absolute;
+  max-height: 0.8rem;
+  z-index: 1;
+}
+
+@media screen and (max-width: 700px) {
+  .heroText{
+    h1{
+      font-size: 4vw;
+      letter-spacing: 0;
+    }
+  }
+  
+}
+
+@media screen and (max-width: 700px) {
+  .heroText{
+    h1{
+      font-size: 4vw;
+      letter-spacing: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .heroText{
+    top:2%;
+
+    h2{
+      font-size: 4vw;
+    }
+  }
+  
+  .ctaContainer{
+    margin-top: -5vw;
+
+    .creditCard{
+      visibility: hidden;
+    }
+
+    .ctaButton{
+      position: absolute;
+      height: 8vw;
+      width: 25vw;
+      font-size: 4vw;
+      letter-spacing: 0;
+
+    }
+  }
+  
+}
