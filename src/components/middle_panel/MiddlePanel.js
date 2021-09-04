@@ -1,10 +1,6 @@
 import React from 'react'
-import { StaticImage } from "gatsby-plugin-image"
-
 import MidPanelText from './MiddlePanelText'
 import MidPanelList from './MiddlePanelList'
-import * as midPanelStyle from './midPanel.module.scss'
-
 
 const MiddlePanel = () => {
   return ( 
