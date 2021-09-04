@@ -1,8 +1,94 @@
 $goldfb: #f9a403;
 $bluefb: #1a1f71;
 // Source Sans Pro 
-// light 300 
-// regular 400 
-// semi-bold 600 
-// bold 700 
 
+.panelText{
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+  width: 80%;
+  margin: 4rem auto;
+  font-weight: 100;
+
+  h3{
+    font-size: 3.5vw;
+    font-weight: 100;
+    color:$bluefb;
+    margin: 0;
+  }
+
+  p{
+    margin: 2vw auto;
+    font-size:1.819vw;
+    line-height: 2.8vw;
+    width: 81%;
+  }
+}
+
+.listContainer{
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  padding-left: 0;
+  width: 100%;
+
+  .listItem{
+    min-width: 275px;
+    margin-top: 3rem;
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 100;
+    display: grid;
+    grid-template-columns: 335px;
+    grid-template-rows: 105px 1fr 1fr;
+    grid-row-gap: 2rem;
+
+    h4{
+      color: $bluefb;
+      font-size: 2.6vw;
+      margin: 0;
+      white-space: nowrap;
+    }
+
+    p{
+      font-size: 1.3rem;
+      margin: -1.5rem auto;
+    }
+  }
+
+  .listIcon{
+    margin: 0 auto;
+    width: 105px;
+    height: 110px; 
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .panelText{
+
+    h3{
+      font-size: 1.7rem;
+    }
+
+    p{
+      font-size: 1rem;
+      margin: 2vw auto;
+      width: 100%;
+      line-height: 1rem;
+    }
+  }
+
+  .listContainer{
+    .listItem{
+      h4{
+        font-size: 1.5rem;
+      }
+
+      p{
+        font-size: 1.2rem;
+      }
+    }
+  }
+  
+}
