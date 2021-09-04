@@ -14,7 +14,7 @@ const CtaContainer = () => {
           loading='eager'
           className={heroStyle.creditCard}
         />
-      <button className={heroStyle.ctaButton}>
+      <button className={heroStyle.ctaButton} aria-label="see details">
         <Link to='#middle_panel'>
           <span>See details</span>
           <div className={heroStyle.arrowDown} />

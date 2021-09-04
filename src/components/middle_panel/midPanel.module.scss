@@ -1,8 +1,63 @@
 $goldfb: #f9a403;
 $bluefb: #1a1f71;
 // Source Sans Pro 
-// light 300 
-// regular 400 
-// semi-bold 600 
-// bold 700 
 
+.panelText{
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+  width: 80%;
+  margin: 3.5vw auto;
+  font-weight: 100;
+
+  h3{
+    font-size: 2.8vw;
+    font-weight: 100;
+    color:$bluefb;
+    margin: 0;
+  }
+
+  p{
+    margin: 2vw auto;
+    font-size:1.819vw;
+    line-height: 2.8vw;
+    width: 81%;
+  }
+}
+
+.listContainer{
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  padding-left: 0;
+  width: 100%;
+
+  .listItem{
+    width: 30%;
+    min-width: 145px;
+    border: dashed yellow;
+    
+  }
+
+  .listIcon{
+    
+  }
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .panelText{
+
+    h3{
+      font-size: 3.5vw;
+    }
+    p{
+      font-size: 2.5vw;
+      margin: 2vw auto;
+      width: 100%;
+    }
+  }
+}

@@ -4,17 +4,24 @@ module.exports = {
     title: "mindvolt_psd",
   },
   plugins: [
+    // "gatsby-image",
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
-    
+    `gatsby-transformer-json`,
+    {
+        resolve:`gatsby-source-filesystem`,
+        options: {
+          path:`${__dirname}/src/data/`
+        },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: "./src/images/",
+        path: `${__dirname}/src/images/`,
       },
       __key: "images",
     },
@@ -24,7 +31,7 @@ module.exports = {
         name: "Mindvolt Project",
         short_name: "mindvolt_psd",
         start_url: "/",
-        icon: "./src/images/bank-icon.png",
+        icon: `${__dirname}/src/images/bank-icon.png`,
         display: "standalone",
         theme_color: "#000000",
         background_color: "#ffffff"

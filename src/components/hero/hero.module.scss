@@ -1,10 +1,6 @@
 $goldfb: #f9a403;
 $bluefb: #1a1f71;
 // Source Sans Pro 
-// light 300 
-// regular 400 
-// semi-bold 600 
-// bold 700 
 
 @mixin flow-no-wrap {
   display: flex;
@@ -53,11 +49,8 @@ $bluefb: #1a1f71;
     background-color: $goldfb;
     font-size: 2vw;
     font-weight:bold;
-    letter-spacing: -1px;
     
-    .arrowDown {
-      width: 0; 
-      height: 0; 
+    .arrowDown { 
       border-left: 0.75vw solid transparent;
       border-right: 0.75vw solid transparent;
       border-top: 0.75vw solid $bluefb;

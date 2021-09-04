@@ -1,0 +1,20 @@
+[
+  {
+    "title":"Cell phone bills",
+    "text":"Take care of your monthly payments online with ease",
+    "image":"../../images/cellphone-icon.png",
+    "altText":"cell phone bills icon"
+  },
+  { 
+    "title":"Streaming services",
+    "text":"Pay for subscriptions such as music, and TV streaming",
+    "image":"../../images/headphones-icon.png",
+    "altText":"streaming services icon"
+  },
+  {
+    "title":"Utilities",
+    "text":"It's simple to pay -utility bills online, from water to electric",
+    "image":"../../images/socket-faucet-icon.png",
+    "altText":"utilities icon"
+  }
+] 
