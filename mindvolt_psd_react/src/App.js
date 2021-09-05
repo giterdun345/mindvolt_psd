@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import HeroContainer from './components/hero/HeroContainer'
+import MiddlePanel from './components/middlePanel/MiddlePanel';
+import BottomPanel from './components/bottomPanel/BottomPanel';
 
-function App() {
+import './App.scss';
+import 'normalize.css'
+import LegalFooter from './components/legalFooter/LegalFooter';
+
+const App= ()=> {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HeroContainer />
+      <MiddlePanel />
+      <BottomPanel />
+      <LegalFooter />
     </div>
   );
 }

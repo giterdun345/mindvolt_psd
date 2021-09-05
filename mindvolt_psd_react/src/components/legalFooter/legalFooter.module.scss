@@ -1,0 +1,26 @@
+$bluefb: #1a1f71;
+$fontFam: "Myriad Pro Regular", sans-serif;
+
+.footerContainer{
+  margin-top: -1vw;
+  background: #eeeeee;
+  height: 240px;
+  padding-top:2vw;
+  
+
+  .logos{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-left: 8vw;
+
+  }
+
+  p{
+    font-family: $fontFam;
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-left: 8%;
+    margin-right: 1%;
+  }
+}

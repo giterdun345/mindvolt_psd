@@ -1,0 +1,92 @@
+$bluefb: #1a1f71;
+$fontFam: "Myriad Pro Light", sans-serif;
+
+@mixin titleFont{
+  color: $bluefb;
+  font-size: 3.5vw;
+  font-weight: 100;
+}
+
+.panelText{
+  font-family: $fontFam;
+  text-align: center;
+  width: 80%;
+  margin: 4rem auto;
+  font-weight: 100;
+
+  h3{
+    @include titleFont();
+    margin: 0;
+  }
+
+  p{
+    margin: 2vw auto;
+    font-size:1.819vw;
+    width: 81%;
+  }
+}
+
+.listContainer{
+  font-family: $fontFam;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  padding-left: 0;
+  width: 100%;
+  margin-bottom: 8vw;
+
+  .listItem{
+    min-width: 275px;
+    margin-top: 1rem;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 335px;
+    grid-template-rows: 105px 1fr 1fr;
+    grid-row-gap: 2rem;
+
+    h4{
+      @include titleFont();
+      font-size: 3vw;
+      margin: 0;
+      white-space: nowrap;
+    }
+
+    p{
+      font-size: 1.819vw;
+      margin: -1.5rem auto;
+    }
+  }
+
+  .listIcon{
+    margin: 0 auto;
+    width: 105px;
+    height: 110px; 
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .panelText{
+
+    h3{
+      font-size: 1.5rem;
+    }
+
+    p{
+      font-size: 1rem;
+      margin: 2vw auto;
+      width: 100%;
+      line-height: 1rem;
+    }
+  }
+
+  .listItem{
+    p{
+      font-size: 1rem;
+      margin: 2vw auto;
+      width: 100%;
+      line-height: 1rem;
+    }
+  }
+}

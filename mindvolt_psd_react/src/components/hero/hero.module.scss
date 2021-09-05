@@ -1,0 +1,110 @@
+$goldBackground: linear-gradient(to right, #fa9f01, #f4ca12);
+// faa002 --> f4ca12
+$bluefb: #1a1f71;
+
+@mixin flow-no-wrap {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.heroContainer{
+
+  .heroImage{
+      display: grid;
+      min-width: 320px; // beyond is possible but not needed
+      width: 100%;
+      height: 100%;
+      object-fit: cover; //proportional scaling
+  }
+
+  .heroText{
+    position: absolute;
+    top: 1.5%;
+    left: 2%;
+    font-family: "Myriad Pro Light", sans-serif;
+    color: $bluefb;
+    width: 58%;
+  
+    h1{
+      font-size: 4vw;
+      font-weight: 100;
+    }
+  
+    h2{
+      font-size: 2.4vw;
+      font-weight: 100;
+    }
+  }
+}
+
+.ctaContainer{
+  @include flow-no-wrap;
+  margin-top: 3.5vw;
+  margin-left: -0.5vw;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 41vw;
+  height: 15vw;
+
+  .creditCard{
+    width: 25vw;
+    height: 15vw;
+  }
+
+  .ctaButton{
+    height: 5vw;
+    width: 15vw;
+    color: $bluefb;
+    background: $goldBackground;
+    font-family: "Myriad Pro Bold";
+    font-size: 2vw;
+    visibility: visible; //button will dissapear on smaller screens <700px
+      
+    .arrowDown {
+      width: 0; 
+      height: 0; 
+      border-left: 0.75vw solid transparent;
+      border-right: 0.75vw solid transparent;
+      border-top: 0.75vw solid $bluefb;
+      margin-top: 0.25em;
+    }
+
+    a{
+      @include flow-no-wrap;
+      align-items: center;
+      justify-content: space-around;
+      text-decoration: none;
+      color:$bluefb;
+
+      span{
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+.rectangleSVG{
+  position: absolute;
+  max-height: 0.8rem;
+  min-width: 320px; //keeps bar across at small screens
+  width: 100%;
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+  .heroContainer{
+    .heroText{
+      h2{
+        font-size: 3.5vw;
+      }
+    }
+  }
+  
+  .ctaContainer{
+    .ctaButton{
+      visibility: hidden;
+    }
+  }
+}

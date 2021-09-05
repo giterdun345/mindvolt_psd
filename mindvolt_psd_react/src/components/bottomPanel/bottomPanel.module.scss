@@ -1,0 +1,111 @@
+$bluefb: #1a1f71;
+$fontFam: "Myriad Pro Light", sans-serif;
+$goldBackground: linear-gradient(to right, #f9a404, #f4c912);
+
+
+@mixin imageDimensions {
+  max-width: 370px;
+  min-width: 198px;
+  max-height: 362px;
+  z-index: -1; //for responsive screen @ tablet and mobile views 
+}
+
+.bottomContainer{
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+
+  .imageLeft{
+    @include imageDimensions;
+  }
+
+  .rectangleBackgroundFull{
+    flex: 1;
+    background: $goldBackground;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: visible;
+    max-height: 362px;
+
+    h5{
+      font-family: $fontFam;
+      color: $bluefb;
+      font-size: 1.66em;
+      // font-weight: 100; needed more contrast
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+
+  .imageRight{
+    @include imageDimensions;
+  }
+
+}
+
+.rectangleBackgroundSmall{
+  background: $goldBackground;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  min-width: 309px;
+  min-height: 309px;
+  visibility: hidden;
+// for responsive view 
+  margin: 0 auto;
+  margin-top: -24vw;
+  height: 25vw;
+  z-index: 2;
+
+  h5{
+    font-family: $fontFam;
+    color: $bluefb;
+    font-size: 1.66em;
+    font-weight: 100;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .bottomContainer{
+    .rectangleBackgroundFull{
+      visibility: hidden;
+      width: 5%; //provides margin for images
+    }
+  }
+  .rectangleBackgroundSmall{
+    visibility: visible;
+    border: none;
+  }
+}
+
+
+@media screen and (max-width: 412px) {
+  .bottomContainer{
+    overflow: hidden;
+    display: grid;
+
+    .imageRight{
+      visibility:hidden;
+      width: 1px;
+      height: 1px;
+    }
+    .rectangleBackgroundFull{
+      height: 1px;
+      width: 1px;
+    }
+
+    .imageLeft{
+      width: 320px;
+    }
+  }
+
+  .rectangleBackgroundSmall{
+    margin-top: -36vw;
+    margin-bottom: 8vw;
+  }
+}
