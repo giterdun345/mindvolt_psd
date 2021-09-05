@@ -15,14 +15,4 @@ Albeit overly complicated for a single static webpage, it was a great oppurtunit
     </a>
 </p>
 
-<p align="left">
-  <a href="https://reactjs.org/">
-    <img alt="Gatsby" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" width="60" />
-  </a>
-</p>
 
-<p align="right">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
