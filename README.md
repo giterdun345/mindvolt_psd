@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fe0bdf13-2ea7-49ab-b1fe-3173c54bdbb7/deploy-status)](https://app.netlify.com/sites/mindvolt-psd-project/deploys)
+
 <h1 align="center">
   Mindvolt Project
 </h1>
