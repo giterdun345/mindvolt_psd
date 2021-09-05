@@ -1,8 +1,3 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
 <h1 align="center">
   Mindvolt Project
 </h1>
@@ -12,7 +7,12 @@ I like to take interview projects and use them to try new things and learn more 
 
 <p>The demo for this site can be found at <a href="https://mindvoltpsdmaster.gatsbyjs.io/" target="_blank" >this link.</a></p>
 
-## 🚀 Quick start
+## 🚀 Gatsby App
+<p align="center">
+  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
+    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  </a>
+</p>
 
 1.  **Create a Gatsby site.**
 
